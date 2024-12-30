@@ -1,14 +1,13 @@
 @import "../Utilities/themes";
 @import "../Utilities/variables";
 
-section {
-  margin: 5rem 0 5rem 0;
+
+section{
+  padding: 5rem;
 }
-
-
 h1 {
   color: $heritage;
-  font-size: $font-size-6xl;
+  font-size: $font-size-7xl;
   font-weight: bold;
   font-family: $oswald;
 }
@@ -17,7 +16,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: $ink-blue;
   font-weight: 700; 
-  font-size: $font-size-2xl;
+  font-size: $font-size-5xl;
   font-family: $open-sans;
 }
 
@@ -27,6 +26,16 @@ h3 {
   font-size: $font-size-2xl;
   font-family: $open-sans;
   font-weight: 900;
+}
+
+h4 {
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 
 p,

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- <!-- First Name Amp 
+<!-- First Name Amp 
   %%[
   var @contact 
   set @contact = QueryParameter('SFID')
@@ -33,6 +33,7 @@ Set @firstnamecombo = @firstname
 ENDIF
   ]%%
 -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +41,7 @@ ENDIF
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Starter Template </title>
+  <title> INTL-I-20 </title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -102,26 +103,26 @@ ENDIF
 
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4NXPNK9L4W');
-</script>
+    gtag('config', 'G-4NXPNK9L4W');
+  </script>
 
-<!-- Hotjar Tracking Code for SNHU Properties -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2360018,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  <!-- Hotjar Tracking Code for SNHU Properties -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2360018, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 </head>
 
@@ -152,37 +153,455 @@ ENDIF
 
   <!---Meet the New SNHU Term Names-->
 
-  <div class="meet-div text-center d-flex justify-content-center align-items-center">
-  </div>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class=" text-white">Congratulations, <FullName>! <br>
+            Welcome to SNHU!
+
+        </h1>
+        <h2 class="text-white mt-2">You are accepted and have received your I-20!</h2>
+      </div>
+    </div>
+  </section>
+
+  <section >
+    <div class="container">
+      <div class="row py-5">
+        <h2 class="text-center">To find out your next steps, please click through the following tabs:</h2>
+      </div>
+
+      <div class="row">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item col-md-3 d-flex" role="presentation">
+            <button class="nav-link active" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button"
+              role="tab" aria-controls="visa" aria-selected="true">1. Start your visa application and make your
+                visa appointment</button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="wellness-tab" data-bs-toggle="tab" data-bs-target="#wellness" type="button"
+              role="tab" aria-controls="wellness" aria-selected="false">2. Upload your wellness documents and
+                purchase interim health insurance </button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="housing-tab" data-bs-toggle="tab" data-bs-target="#housing" type="button"
+              role="tab" aria-controls="housing" aria-selected="false">3. Reserve housing and upload a photo for
+                your student ID</button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button"
+              role="tab" aria-controls="review" aria-selected="false">4. Review check-in and orientation dates,
+                and prepare for your arrival to campus  </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row ">
+              <div class="col-md-6 p-5">
+                <strong>A. Start your visa application</strong>
+                <ol class="mt-3">
+                  <li>Review your I-20 for accuracy — and contact us right away if you notice any issues.</li>
+                  <li><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application.html" target="_blank">Learn more about the DS-160</a>.</li>
+                  <li><a href="https://ceac.state.gov/genniv/" target="_blank">Fill out a DS-160.</a></li>
+                  <li><a href="https://www.fmjfee.com/i901fee/index.html" target="_blank">Pay your SEVIS Fee</a> — the SEVIS code for Southern New Hampshire University is
+                    <strong>BOS214F00527000</strong>.
+                  </li>
+                  <li>Schedule your visa interview as soon as possible. (See step B below.)</li>
+                </ol>
+
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/c57257ff-7f0d-483a-88bc-ff5d40edb4ef.jpeg"
+                  alt="lady on laptop">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6 p-5">
+                <strong>B. Now, it is time to make your visa appointment.</strong>
+
+                <br><br>
+                <a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html#howtoapply" target="_blank">Learn more about the visa application process and wait times.</a>
+                <br> (Go to the "How to Apply" section.)
+                 <br><br>
+                <strong>Let us know your appointment date</strong>
+                <br>
+                Please email <a href="mailto:international@snhu.edu" target="_blank">international@snhu.edu</a> the date of your scheduled visa appointment.
+                 <br><br>
+                <strong>Prepare for your visa interview</strong><br>
+                It is important to know what you can expect at your visa appointment
+
+                <br>
+
+                <div class="py-5">
+                <div class="d-flex align-items-center py-3 gap1rem">
+                  <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/74d88892-0bf5-480e-81e3-21c245b4d6e8.png" alt="Id icon">
+                  <a href="https://events.blackthorn.io/en/1N1TpJJ7/g/gC1hJ6Rsr2?search=%20&sortBy=date&category=Visa%20Interview%20Preparation&date=TODAY&keywords=" class="btn btn-signup" target="_blank"> Sign up for a virtual Visa Interview Preparation session</a>
+                </div>
+
+                <div class="d-flex align-items-center py-2 gap1rem">
+                  <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/98c6533d-8ed7-45a0-a15d-e3e6e7442df5.png" alt="Id icon">
+                  <a href="https://video.snhu.edu/watch/o7x41SbqkB1HSa8ybempMP?" class="btn btn-signup" target="_blank"> Discover other ways that SNHU supports our students</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-6  p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/67d3e222-6a1d-4606-b979-8c4d79f45716.png"
+                  alt="conversation">
+              </div>
+            </div>
+
+          </div>
+
+          <!--Wellness Tab-->
+          <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab"> <div class="row ">
+            <div class="col-md-6 p-5">
+              <strong>A. You now have access to our <a href="https://snhu.medicatconnect.com/default.aspx?medicatSSO=cdfb8a4d2718c70e4376745b0f33605fb2d7e6cd80a6dc452d003c6f9cc2c2b4" target="_blank">Patient Portal</a>, the place where you will upload all your wellness documents</strong>
+              <br> <br>
+              <p>As a reminder, all of the following <a href="https://snhu-externalaffairs.app.box.com/s/enwduz4wwzqxsmbgxgtrpnejm34hxq5y" target="_blank">forms</a> must be submitted before you arrive on the SNHU campus</p>
+              <ul class="mt-3">
+                <li>A completed Health History Form</li>
+                <li>Up-to-date immunization records</li>
+                <li>A tuberculosis screening questionnaire — and any needed tuberculosis test results</li>
+                <li>Optional: documentation of a physical exam</li>
+              </ul>
+
+              <strong>Note: All athletes are required to submit documentation of a physical exam performed within 6 months of term start.</strong>
+<br> <br>
+<strong>Please note: SNHU does not accept medical records from the MM International Health Clinic Pvt Ltd in Hyderabad, India</strong>
+
+            </div>
+            <div class="col-md-6 p-5">
+              <img class="w-100"
+                src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/7e1f6d93-7797-463c-a735-df9a4ae0ab29.png"
+                alt="2 people talking">
+            </div>
+          
+          <hr>
+          <div class="row">
+            <div class="col-md-6 p-5">
+              <strong>B. As an international student, you will be automatically registered for the SNHU health insurance group policy — unless:</strong>
+
+              <br><br>
+              You are under a government scholarship where the sponsor purchases a mandatory, equivalent U.S. health insurance policy.
+               <br><br>
+              Therefore, you should not purchase your own health insurance. 
+               <br><br>
+              <strong>If you plan to arrive at SNHU before classes start, please purchase interim medical insurance to cover you for that time period.</strong><br>
+              
+
+            </div>
+            <div class="col-md-6  p-5">
+              <img class="w-100"
+                src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/df76bb70-b97e-4c6d-8e6f-8a713a9b70d5.png"
+                alt="conversation">
+            </div></div>
+          </div></div>
+
+            <!--Housing Tab-->
+            <div class="tab-pane fade" id="housing" role="tabpanel" aria-labelledby="housing-tab"> <div class="row ">
+              <div class="col-md-6 p-5">
+                <strong>A.  As an SNHU international student, you can choose to live on or off campus.</strong>
+                <br> <br>
+                <p>However, because public transportation is limited, we recommend you either secure campus housing or find off-campus housing in or near Manchester, New Hampshire.
+<br> <br>
+                  Living outside Manchester will require you to have a car or use a hired car service, which can be expensive and unreliable.
+                  <br> <br>
+                  Using campus housing also makes it easier to get to and from class and participate in campus events.</p>
+                  <br> <br>
+                  <ul class="mt-3">
+                    <li>
+                      To learn about your housing options, visit our 
+                      <a href="https://www.snhu.edu/student-experience/international-experience/international-student-services/information-for-accepted-students/housing-information-for-international-students" target="_blank">Housing for International Students</a> webpage.
+                    </li>
+                    <li>
+                      To compare campus housing costs, visit our 
+                      <a href="https://www.snhu.edu/student-experience/campus-experience/campus-housing" target="_blank">SNHU Housing</a> webpage.
+                    </li>
+                    <li>
+                      To find out about SNHU dining and meal plans, visit our 
+                      <a href="https://www.snhu.edu/student-experience/campus-experience/dining-and-facilities" target="_blank">Dining and Facilities</a> webpage.
+                    </li>
+                  </ul>
+
+                  <br>
+                  
+  
+              <a href="https://video.snhu.edu/watch/Vv1twNb6N6ibxD8db6pShs?" target="_blank">
+                <p>Want to see the inside of an SNHU residence hall? Then watch this video!</p>
+              </a>
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/897d75ba-564d-40b7-b02e-6db5add95d49.png"
+                  alt="2 people talking">
+              </div>
+            
+            <hr>
+            <div class="row">
+              <div class="col-md-6 p-5">
+                <strong>B.  Upload a photo for your student ID now, so it is ready for you when you arrive!</strong>
+  
+                <br><br>
+                <ol> 
+                  <li>
+                    Download the GET Mobile app from the <a href="https://apps.apple.com/us/app/get-mobile/id844091049"  target="_blank">App Store</a> or Google Play Store.
+                    <br>
+                    <em>Note: Once you begin your first semester at SNHU, you can use the GET Mobile app to add funds to your Penman Cash account!</em>
+                  </li>
+                  <li>
+                    Select  "Southern New Hampshire University" as your preferred institution. Then, click  “Continue as student/employee.”
+                  </li>
+                  <li>
+                    Sign in with your SNHU email address and password.
+                  </li>
+                  <li>
+                    Create a 4-digit PIN.
+                  </li>
+                  <li>
+                    From the main menu of the app, go to  "Settings." Then, click  “Update photo.”
+                  </li>
+                  <li>
+                    Follow the instructions.
+                  </li>
+                </ol>
+                <br>
+                Please note: Your photo will be subject to administrative approval and needs to follow the guidelines below.
+                <br> <br>
+                Your photo must:
+                <ul>
+                  <li>Be clear and in color</li>
+                  <li>Be free of filters</li>
+                  <li>Be taken indoors</li>
+                  <li>Be taken by someone else — No selfies, please!</li>
+                  <li>Include your entire face and shoulders</li>
+                  <li>Have a white or light-colored background</li>
+                  <li>Not show any hand signs, hats, posters, masks, pets or other people</li>
+                  <li>Show you smiling ☺</li>
+                </ul>
+                
+  
+              </div>
+              <div class="col-md-6  p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/d6a5f585-2d54-483f-8ac9-944c7a1524c4.png"
+                  alt="conversation">
+              </div></div>
+            </div></div>
+
+          <!--Review tab-->
+          <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab"> <div class="row ">
+            <div class="col-md-6 p-5">
+              <strong>A.  All new international students are required to attend check-in and orientation on the SNHU campus.</strong>
+              <br> <br>
+              <p>During these events, you will meet SNHU staff members and receive important information about your time at SNHU. Learn what else to expect from check-in and orientation.
+
+                Please arrange your travels, so you can arrive at campus in time for check-in and orientation. View important dates.</p>
+               
+            </div>
+            <div class="col-md-6 p-5">
+              <img class="w-100"
+                src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/b55479d8-d292-4726-a43c-ea45c8b847f7.png"
+                alt="group of students">
+            </div>
+          
+          <hr>
+          <div class="row">
+            <div class="col-md-6 p-5">
+              <strong>B. Research ways to get to campus, including travel by airplane and bus. </strong>
+
+              <br><br>
+              
+              When making your travel plans, please try to arrive at the university during regular business hours (Monday - Friday, 8:00 am - 4:30 pm EST).
+ <br><br>
+After that, see what you can do near SNHU!
+             
+              
+
+            </div>
+            <div class="col-md-6  p-5">
+              <img class="w-100"
+                src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/46cc64ee-a3ae-4931-92ca-8ed7ad257169.png"
+                alt="conversation">
+            </div></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="text-center p-5">Watch the videos below to discover all the fun and support that awaits you at SNHU!</h2>
+      <div class="row ">
+        <div class="col-md-4 text-center"><strong>Welcome to SNHU</strong>
+          <div class="image-vid-container position-relative"><img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU — You're one of us! '24"
+              src="//play.vidyard.com/CP9tuZRm3UyRpMbFjgX4Fo.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/ddad4a52-e1c7-45d8-b422-0449e6254e9d.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+
+        <!---New Video-->
+        <div class="col-md-4 text-center"><strong>Student Support</strong>
+          <div class="image-vid-container position-relative">
+            <img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU Student Support '24"
+              src="//play.vidyard.com/o7x41SbqkB1HSa8ybempMP.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/0e947cfa-c87d-455c-8195-42c085122a9a.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+        <!--End video-->
+
+        <!---New Video-->
+        <div class="col-md-4 text-center"><strong>Residence Halls</strong>
+          <div class="image-vid-container position-relative">
+            <img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU Tour of Monadnock Dorm '24"
+              src="//play.vidyard.com/Vv1twNb6N6ibxD8db6pShs.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/17541105-b436-4c4e-b8d8-d03a325c66e4.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+        <!--End video-->
+
+      </div>
+
+      <div class="row my-5"></div>
+      <div class="row mt-5">
+        <!---New Video-->
+        <div class="col-md-4 text-center"><strong>Sports</strong>
+          <div class="image-vid-container position-relative">
+            <img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU Volleyball '24"
+              src="//play.vidyard.com/NSJj1jrwFKUt1a2cUZrdNY.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/9f6b6d85-9f32-47a0-9bba-e5fedcb7dac5.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+        <!--End video-->
+
+        <!---New Video-->
+        <div class="col-md-4 text-center"><strong>ESports</strong>
+          <div class="image-vid-container position-relative">
+            <img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU Esports '24"
+              src="//play.vidyard.com/kTFEy5hiaaMwZbQoaAZcdn.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/c969e936-832b-464a-841d-bae4791d5c07.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+        <!--End video-->
+
+        <!---New Video-->
+        <div class="col-md-4 text-center"><strong>Manchester Fun</strong>
+          <div class="image-vid-container position-relative">
+            <img class="img-overlay"
+              src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/29103103-618d-4076-bc0f-213fc43a429c.png"
+              alt="">
+            <iframe class="vidyard_iframe" title="Duplicate of SNHU — Welcome to Manchester '24"
+              src="//play.vidyard.com/cRnXryqDnbDx3uhhmTEqU9.html?" width="640" height="360" scrolling="no"
+              frameborder="0" allowtransparency="true" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/608dafc6-6fa4-4922-b106-09137d048261.png"
+              alt="icon" class="icon-vid">
+          </div>
+        </div>
+        <!--End video-->
+      </div>
+    </div>
+  </section>
+
+  <section class=" mt-5 p-5" style="background-color: #E3E3E3;">
+    <h1 class="text-center p-5">Academic Majors</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img class=""
+            src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/db0088cb-d5d7-4059-bef7-5a4cabd38c2c.png"
+            alt="Arts">
+          <br>
+          <h4 class="p-5">School of Arts, Sciences and Education</h4>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <img class=""
+            src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/0e9357a7-1105-44ae-a342-af89dba61d69.png"
+            alt="business">
+          <br>
+          <h4 class="p-5">School of Business</h4>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <img class=""
+            src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/bd891e5c-e6ad-481b-9f16-a3c51d673ea5.png"
+            alt="engineering">
+          <br>
+          <h4 class="p-5">School of Engineering, Technology and Aeronautics</h4>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--Accreditation-->
 
-  <div role="region" aria-label="Accreditations" class="container-fluid align-items-center text-center py-5 bg-light accreditation">
+  <!-- <div role="region" aria-label="Accreditations"
+    class="container-fluid align-items-center text-center py-5 bg-light accreditation">
     <img class="col-10 col-xxl-6"
       src="https://client-data.knak.io/production/email_assets/5fd10b569d941/URLXxrrgwra1n8IolHbmjqoC3cLBsPysUnEDKV6p.png"
       alt="SNHU accreditation logos" width="100%" height="auto">
-  </div>
+  </div> -->
 
   <!--Footer-->
 
+ 
+
   <footer class="container-fluid" style="background-color: #00244E;">
-    <div class="col-10 d-flex flex-wrap justify-content-between align-items-center px-3 px-md-5 py-5 mx-auto">
+    <div class="col-md-10 d-flex flex-wrap justify-content-even align-items-center px-3 px-md-5 py-5 mx-auto">
       <p class="col-md-4 lh-lg" style="color:#fff"> <strong>SNHU Admission</strong><br>
-        55 S. Commercial Street 
+        55 S. Commercial Street
         <br> Manchester, NH 03106
         <br>
-        <a href="Tel:8883870864" class="text-link" >888.387.0864</a>
+        <a href="Tel:8883870864" class="text-link">888.387.0864</a>
+      
         <br>
-        <a href="mailto:admissions@snhu.edu" class="text-link" > admissions@snhu.edu </a>
-      <a href="https://www.snhu.edu/" target="_blank"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <img
-          src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
-          height="80" alt="SNHU logo">
-      </a>
-      </a>
+        <a href="mailto:admissions@snhu.edu" class="text-link"> admissions@snhu.edu </a>
+        </p>
+        <a href="https://www.snhu.edu/" target="_blank"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img
+            src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
+            height="80" alt="SNHU logo">
+        </a>
+        </a>
       <p class="col-md-4 justify-content-end lh-lg text-md-end" style="color: #fff;">
-        ©  © %%=FormatDate(Now(), "yyyy")=%%<br>
+        © © %%=FormatDate(Now(), "yyyy")=%%<br>
         Southern New Hampshire University<br>
         View our <a href="https://www.snhu.edu/privacy-policy" class="text-link">Privacy Policy</a> | <a
           href="https://www.snhu.edu/about-us/accessibility" class="text-link">Accessibility at SNHU</a>

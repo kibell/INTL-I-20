@@ -16,12 +16,74 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+.hero-section {
+  background: url(https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/8caf6884-58e8-4cba-88c0-9e3f58991112.gif);
+  background-size: cover;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap1rem {
+  gap: 1rem;
+}
+
+.icon-vid {
+  position: absolute;
+  bottom: -3rem;
+  left: 9rem;
+  z-index: 3;
+}
+
+iframe.vidyard_iframe {
+  position: absolute;
+  top: 4px;
+  left: 78px;
+  height: 28.5rem;
+  width: 16rem;
+  border-radius: 24px;
+  z-index: 1;
+}
 
 
+.img-overlay {
+position: relative;
+  pointer-events: none;
+  z-index: 2;
+}
 
+.nav-tabs {
+  border: none;
+}
 
+.nav-tabs .nav-link.active {
+  border-top: solid 2px;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    font-weight: 700;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: solid 2px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
   
-  
+.nav-tabs .nav-link:hover {
+  border-bottom: solid 2px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+} 
+
+.nav-tabs .nav-link.active:hover {
+  border-top: solid 2px;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    font-weight: 700;
+}
   
  
   
