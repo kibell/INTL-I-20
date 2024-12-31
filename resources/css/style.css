@@ -423,15 +423,17 @@ body {
 
 .icon-vid {
   position: absolute;
-  bottom: -3rem;
-  left: 9rem;
+  bottom: 0;
   z-index: 3;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 iframe.vidyard_iframe {
   position: absolute;
-  top: 4px;
-  left: 78px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 28.5rem;
   width: 16rem;
   border-radius: 24px;
@@ -476,11 +478,6 @@ iframe.vidyard_iframe {
   font-weight: 700;
 }
 
-@media (max-width: 1440px) {
-  .vidyard_iframe {
-    left: 67px !important;
-  }
-}
 @media (max-width: 768px) {
   .vid-pad {
     padding: 5rem;
@@ -490,23 +487,8 @@ iframe.vidyard_iframe {
     display: flex;
     justify-content: center;
   }
-  .icon-vid {
-    position: absolute;
-    bottom: -3rem;
-    left: 3rem;
-    z-index: 3;
-  }
   .major-img {
     width: 100%;
-  }
-  .vidyard_iframe {
-    position: absolute;
-    top: auto !important;
-    left: auto !important;
-    height: 28.5rem;
-    width: 16rem;
-    border-radius: 24px;
-    z-index: 1;
   }
   h1 {
     font-size: 3rem;
