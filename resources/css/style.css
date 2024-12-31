@@ -118,6 +118,11 @@
   border-radius: 27px;
 }
 
+.btn-signup:hover {
+  border-color: #3F64AD;
+  border-radius: 27px;
+}
+
 .chat-btn {
   position: fixed;
   transform: rotate(-90deg);
@@ -238,11 +243,6 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 576px) {
-  section {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-}
 /* Font size */
 /* 18px */
 /*20 px*/
@@ -405,11 +405,6 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 576px) {
-  section {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-}
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -417,7 +412,6 @@ body {
 .hero-section {
   background: url(https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/8caf6884-58e8-4cba-88c0-9e3f58991112.gif);
   background-size: cover;
-  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,4 +474,48 @@ iframe.vidyard_iframe {
   border-left: solid 2px;
   border-right: solid 2px;
   font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+  .vidyard_iframe {
+    left: 67px !important;
+  }
+}
+@media (max-width: 768px) {
+  .vid-pad {
+    padding: 5rem;
+  }
+  .image-vid-container.position-relative {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .icon-vid {
+    position: absolute;
+    bottom: -3rem;
+    left: 3rem;
+    z-index: 3;
+  }
+  .major-img {
+    width: 100%;
+  }
+  .vidyard_iframe {
+    position: absolute;
+    top: auto !important;
+    left: auto !important;
+    height: 28.5rem;
+    width: 16rem;
+    border-radius: 24px;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .hero-section {
+    padding: 1rem;
+    height: auto;
+  }
+  section {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
