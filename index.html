@@ -542,31 +542,87 @@ After that, <a href="https://video.snhu.edu/watch/cRnXryqDnbDx3uhhmTEqU9?" targe
 
     <div class="container">
       <div class="row mt-5">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center vidyard-thumbnail-wrapper " data-video-id="your-video-id-1">
           <img class="major-img"
             src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/db0088cb-d5d7-4059-bef7-5a4cabd38c2c.png"
-            alt="Arts">
+            alt="Arts" />
+
+            <iframe  class="vidyard-player" title="School of Arts, Sciences and Education '24" 
+            src="//play.vidyard.com/mK2rvp8W6BhdXYsqhjtv6N.html?" 
+            frameborder="0" 
+            scrolling="no" 
+            allowfullscreen 
+            allowtransparency="true"
+            style="display: none;"
+             ></iframe>
           <br>
           <h4 class="p-5">School of Arts, Sciences and Education</h4>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center vidyard-thumbnail-wrapper" data-video-id="your-video-id-2">
           <img class="major-img"
             src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/0e9357a7-1105-44ae-a342-af89dba61d69.png"
             alt="business">
+            <iframe  class="vidyard-player" title="School of Business" 
+            src="//play.vidyard.com/7MX5Hmsp6f8b66zwuFf9Fi.html?"
+            frameborder="0" 
+            scrolling="no" 
+            allowfullscreen 
+            allowtransparency="true"
+            style="display: none;"
+             ></iframe>
+
           <br>
           <h4 class="p-5">School of Business</h4>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center vidyard-thumbnail-wrapper" data-video-id="your-video-id-3">
           <img class="major-img"
             src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/bd891e5c-e6ad-481b-9f16-a3c51d673ea5.png"
-            alt="engineering">
+            alt="engineering" >
+
+            <iframe  class="vidyard-player" title="School of Engineering, Technology and Aeronautics" 
+            src="//play.vidyard.com/64k72PCSZ3aBdnoTLue9DP.html?" 
+            frameborder="0" 
+            scrolling="no" 
+            allowfullscreen 
+            allowtransparency="true"
+            style="display: none;"
+             ></iframe>
           <br>
           <h4 class="p-5">School of Engineering, Technology and Aeronautics</h4>
         </div>
       </div>
     </div>
+    <style>
+    
+      .major-img {
+        width: 100%;
+        cursor: pointer;
+      }
+    
+      .vidyard-player {
+        background-color: transparent !important;
+        width: 100%;
+        height: 26rem;
+      }
+      </style>
+    <script>
+      document.addEventListener('click', function (event) {
+    // Check if the clicked element is a custom thumbnail
+    if (event.target.classList.contains('major-img')) {
+      const wrapper = event.target.closest('.vidyard-thumbnail-wrapper');
+      const thumbnail = wrapper.querySelector('.major-img');
+      const videoPlayer = wrapper.querySelector('.vidyard-player');
+
+      // Hide the custom thumbnail
+      thumbnail.style.display = 'none';
+
+      // Show and play the Vidyard video
+      videoPlayer.style.display = 'block';
+    }
+  });
+    </script>
   </section>
 
   <!--Accreditation-->
